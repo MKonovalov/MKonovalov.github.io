@@ -194,14 +194,14 @@
     }
   </style>
   <!-- PostHog product analytics -->
-  <!-- <script>
-    !function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="ki Ci init qi Hi pr Bi zi Di capture calculateEventProperties Qi register register_once register_for_session unregister unregister_for_session Ki getFeatureFlag getFeatureFlagPayload getFeatureFlagResult getAllFeatureFlags isFeatureEnabled reloadFeatureFlags updateFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync Xi identify setPersonProperties unsetPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset shutdown setIdentity clearIdentity get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException addExceptionStep captureLog startExceptionAutocapture stopExceptionAutocapture loadToolbar get_property getSessionProperty Ji Gi createPersonProfile setInternalOrTestUser Yi Ai rn opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Vi debug mr it getPageViewId captureTraceFeedback captureTraceMetric Oi".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-    posthog.init('phc_l1jtx4tZRSCf0wcwuvPgC6fXGpyvOxus4bsqOS4BOI2', {
-        api_host: 'https://us.i.posthog.com',
-        defaults: '2026-05-30',
-        person_profiles: 'identified_only',
+  <script>
+    !function (t, e) { var o, n, p, r; e.__SV || (window.posthog && window.posthog.__loaded) || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "Fi Di init Ji Xi Tr Ki tn Zi capture calculateEventProperties ln register register_once register_for_session unregister unregister_for_session dn getFeatureFlag getFeatureFlagPayload getFeatureFlagResult getAllFeatureFlags isFeatureEnabled reloadFeatureFlags updateFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync cn identify setPersonProperties unsetPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset shutdown setIdentity clearIdentity get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException addExceptionStep captureLog startExceptionAutocapture stopExceptionAutocapture loadToolbar get_property getSessionProperty un sn createPersonProfile setInternalOrTestUser hn Wi pn opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing rn debug Er it getPageViewId captureTraceFeedback captureTraceMetric Ui".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
+    posthog.init('phc_t9YirFCDj9UKZUTUmFRTfo5rJWip6jHeEK3kJzAAiw5x', {
+      api_host: 'https://eu.i.posthog.com',
+      defaults: '2026-05-30',
+      person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
     })
-</script> -->
+  </script>
 </head>
 
 <body>
@@ -769,133 +769,133 @@
     </footer>
   </div>
   <script>
-    (function () {
-      var EVENTS = [
-        { kind: "goal.created", detail: '"Make retry reliable"', ops: false },
-        { kind: "state.ops_applied", detail: "CreateNode goal_retry", ops: true },
-        { kind: "run.started", detail: 'run_42 "fix retry skill"', ops: false },
-        { kind: "patch.proposed", detail: '"persist retry counter"', ops: false },
-        { kind: "state.ops_applied", detail: "CreateNode patch_9 + advances", ops: true },
-        { kind: "tool.called", detail: "cargo test retry \u2014 ok, 1 passed", ops: false },
-        { kind: "eval.finished", detail: "eval_5 Passed \u00b7 score 1.0", ops: false },
-        { kind: "state.ops_applied", detail: "CreateNode eval_5 + validated_by", ops: true },
-        { kind: "decision.created", detail: 'decision_3 Approved \u2014 "promote"', ops: false },
-        { kind: "state.ops_applied", detail: "decision_3 + approved_by \u2192 Promoted", ops: true }
-      ];
-      var NODES = [
-        { key: "goal", kind: "GOAL", title: "Make retry reliable", x: 320, y: 70, at: 2 },
-        { key: "patch", kind: "PATCH", title: "persist retry counter", x: 320, y: 210, at: 5 },
-        { key: "eval", kind: "EVAL", title: "cargo test \u2014 Passed", x: 155, y: 340, at: 8 },
-        { key: "decision", kind: "DECISION", title: "Approved", x: 490, y: 340, at: 10 }
-      ];
-      var EDGES = [
-        { x1: 320, y1: 182, x2: 320, y2: 100, lx: 356, ly: 145, label: "advances", at: 5 },
-        { x1: 280, y1: 238, x2: 185, y2: 312, lx: 200, ly: 268, label: "validated_by", at: 8 },
-        { x1: 360, y1: 238, x2: 455, y2: 312, lx: 442, ly: 268, label: "approved_by", at: 10 }
-      ];
-      var MONO = "'JetBrains Mono', monospace";
-      var step = 0, playing = true, timer = null;
-      var logRows = [], nodeEls = [], badge = null, edgeEls = [];
+      (function () {
+        var EVENTS = [
+          { kind: "goal.created", detail: '"Make retry reliable"', ops: false },
+          { kind: "state.ops_applied", detail: "CreateNode goal_retry", ops: true },
+          { kind: "run.started", detail: 'run_42 "fix retry skill"', ops: false },
+          { kind: "patch.proposed", detail: '"persist retry counter"', ops: false },
+          { kind: "state.ops_applied", detail: "CreateNode patch_9 + advances", ops: true },
+          { kind: "tool.called", detail: "cargo test retry \u2014 ok, 1 passed", ops: false },
+          { kind: "eval.finished", detail: "eval_5 Passed \u00b7 score 1.0", ops: false },
+          { kind: "state.ops_applied", detail: "CreateNode eval_5 + validated_by", ops: true },
+          { kind: "decision.created", detail: 'decision_3 Approved \u2014 "promote"', ops: false },
+          { kind: "state.ops_applied", detail: "decision_3 + approved_by \u2192 Promoted", ops: true }
+        ];
+        var NODES = [
+          { key: "goal", kind: "GOAL", title: "Make retry reliable", x: 320, y: 70, at: 2 },
+          { key: "patch", kind: "PATCH", title: "persist retry counter", x: 320, y: 210, at: 5 },
+          { key: "eval", kind: "EVAL", title: "cargo test \u2014 Passed", x: 155, y: 340, at: 8 },
+          { key: "decision", kind: "DECISION", title: "Approved", x: 490, y: 340, at: 10 }
+        ];
+        var EDGES = [
+          { x1: 320, y1: 182, x2: 320, y2: 100, lx: 356, ly: 145, label: "advances", at: 5 },
+          { x1: 280, y1: 238, x2: 185, y2: 312, lx: 200, ly: 268, label: "validated_by", at: 8 },
+          { x1: 360, y1: 238, x2: 455, y2: 312, lx: 442, ly: 268, label: "approved_by", at: 10 }
+        ];
+        var MONO = "'JetBrains Mono', monospace";
+        var step = 0, playing = true, timer = null;
+        var logRows = [], nodeEls = [], badge = null, edgeEls = [];
 
-      var logC = document.getElementById("log-rows");
-      EVENTS.forEach(function (e, i) {
-        var row = document.createElement("div");
-        row.style.cssText = "display:flex;align-items:center;gap:12px;font-family:" + MONO + ";font-size:12px;padding:7px 12px;border-radius:8px;border:1px solid transparent;transition:all 0.35s ease;";
-        var num = document.createElement("span");
-        num.style.cssText = "width:22px;flex:none;text-align:right;color:#575B60;font-size:11px;";
-        num.textContent = String(i + 1).padStart(2, "0");
-        var kind = document.createElement("span");
-        kind.style.cssText = "flex:none;font-weight:500;color:" + (e.ops ? "#4DA3FF" : (e.kind === "tool.called" ? "#D8A657" : "#B7BBC0")) + ";";
-        kind.textContent = e.kind;
-        var det = document.createElement("span");
-        det.style.cssText = "flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#8A8F94;";
-        det.textContent = e.detail;
-        row.appendChild(num); row.appendChild(kind); row.appendChild(det);
-        var tag = null;
-        if (e.ops) {
-          tag = document.createElement("span");
-          tag.style.cssText = "flex:none;font-size:10.5px;color:#575B60;";
-          tag.textContent = "\u2192 graph";
-          row.appendChild(tag);
-        }
-        logC.appendChild(row);
-        logRows.push({ row: row, tag: tag });
-      });
-
-      var panel = document.getElementById("graph-panel");
-      NODES.forEach(function (n) {
-        var d = document.createElement("div");
-        d.style.cssText = "position:absolute;left:" + (n.x / 640 * 100) + "%;top:" + (n.y / 420 * 100) + "%;transform:translate(-50%,-42%);opacity:0;transition:opacity 0.45s ease, transform 0.45s ease, border-color 0.45s ease;background:#121418;border:1px solid rgba(255,255,255,0.16);border-radius:12px;padding:10px 18px;color:#E8EAED;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,0.45);";
-        var k = document.createElement("div");
-        k.style.cssText = "font-family:" + MONO + ";font-size:10.5px;letter-spacing:0.08em;opacity:0.75;";
-        k.textContent = n.kind;
-        var t = document.createElement("div");
-        t.style.cssText = "font-weight:600;font-size:14px;margin-top:2px;";
-        t.textContent = n.title;
-        d.appendChild(k); d.appendChild(t);
-        if (n.key === "patch") {
-          badge = document.createElement("div");
-          badge.style.cssText = "position:absolute;top:-11px;right:-10px;background:#4DA3FF;color:#071120;font-family:" + MONO + ";font-size:10.5px;font-weight:600;padding:3px 9px;border-radius:99px;display:none;";
-          badge.textContent = "Promoted";
-          d.appendChild(badge);
-        }
-        panel.appendChild(d);
-        nodeEls.push({ el: d, at: n.at, key: n.key });
-      });
-
-      var svg = document.getElementById("graph-edges");
-      var NS = "http://www.w3.org/2000/svg";
-      EDGES.forEach(function (e) {
-        var g = document.createElementNS(NS, "g");
-        g.style.opacity = "0"; g.style.transition = "opacity 0.5s ease";
-        var l = document.createElementNS(NS, "line");
-        l.setAttribute("x1", e.x1); l.setAttribute("y1", e.y1);
-        l.setAttribute("x2", e.x2); l.setAttribute("y2", e.y2);
-        l.setAttribute("stroke", "#4DA3FF"); l.setAttribute("stroke-width", "1.5");
-        l.setAttribute("stroke-dasharray", "5 4");
-        l.style.animation = "dashmarch 1s linear infinite";
-        var t = document.createElementNS(NS, "text");
-        t.setAttribute("x", e.lx); t.setAttribute("y", e.ly);
-        t.setAttribute("fill", "#6E93BE"); t.setAttribute("font-size", "11.5");
-        t.setAttribute("font-family", "JetBrains Mono, monospace"); t.setAttribute("text-anchor", "middle");
-        t.textContent = e.label;
-        g.appendChild(l); g.appendChild(t); svg.appendChild(g);
-        edgeEls.push({ el: g, at: e.at });
-      });
-
-      function render() {
-        logRows.forEach(function (r, i) {
-          var idx = i + 1, active = step === idx, done = step > idx;
-          r.row.style.background = active ? "rgba(77,163,255,0.1)" : "transparent";
-          r.row.style.borderColor = active ? "rgba(77,163,255,0.35)" : "transparent";
-          r.row.style.opacity = (done || active) ? "1" : "0.32";
-          if (r.tag) {
-            r.tag.textContent = (done || active) ? "folded \u2713" : "\u2192 graph";
-            r.tag.style.color = (done || active) ? "#4DA3FF" : "#575B60";
+        var logC = document.getElementById("log-rows");
+        EVENTS.forEach(function (e, i) {
+          var row = document.createElement("div");
+          row.style.cssText = "display:flex;align-items:center;gap:12px;font-family:" + MONO + ";font-size:12px;padding:7px 12px;border-radius:8px;border:1px solid transparent;transition:all 0.35s ease;";
+          var num = document.createElement("span");
+          num.style.cssText = "width:22px;flex:none;text-align:right;color:#575B60;font-size:11px;";
+          num.textContent = String(i + 1).padStart(2, "0");
+          var kind = document.createElement("span");
+          kind.style.cssText = "flex:none;font-weight:500;color:" + (e.ops ? "#4DA3FF" : (e.kind === "tool.called" ? "#D8A657" : "#B7BBC0")) + ";";
+          kind.textContent = e.kind;
+          var det = document.createElement("span");
+          det.style.cssText = "flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#8A8F94;";
+          det.textContent = e.detail;
+          row.appendChild(num); row.appendChild(kind); row.appendChild(det);
+          var tag = null;
+          if (e.ops) {
+            tag = document.createElement("span");
+            tag.style.cssText = "flex:none;font-size:10.5px;color:#575B60;";
+            tag.textContent = "\u2192 graph";
+            row.appendChild(tag);
           }
+          logC.appendChild(row);
+          logRows.push({ row: row, tag: tag });
         });
-        nodeEls.forEach(function (n) {
-          var on = step >= n.at;
-          n.el.style.opacity = on ? "1" : "0";
-          n.el.style.transform = on ? "translate(-50%,-50%)" : "translate(-50%,-42%)";
+
+        var panel = document.getElementById("graph-panel");
+        NODES.forEach(function (n) {
+          var d = document.createElement("div");
+          d.style.cssText = "position:absolute;left:" + (n.x / 640 * 100) + "%;top:" + (n.y / 420 * 100) + "%;transform:translate(-50%,-42%);opacity:0;transition:opacity 0.45s ease, transform 0.45s ease, border-color 0.45s ease;background:#121418;border:1px solid rgba(255,255,255,0.16);border-radius:12px;padding:10px 18px;color:#E8EAED;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,0.45);";
+          var k = document.createElement("div");
+          k.style.cssText = "font-family:" + MONO + ";font-size:10.5px;letter-spacing:0.08em;opacity:0.75;";
+          k.textContent = n.kind;
+          var t = document.createElement("div");
+          t.style.cssText = "font-weight:600;font-size:14px;margin-top:2px;";
+          t.textContent = n.title;
+          d.appendChild(k); d.appendChild(t);
           if (n.key === "patch") {
-            var promoted = step >= 10;
-            n.el.style.borderColor = promoted ? "#4DA3FF" : "rgba(255,255,255,0.16)";
-            badge.style.display = promoted ? "block" : "none";
+            badge = document.createElement("div");
+            badge.style.cssText = "position:absolute;top:-11px;right:-10px;background:#4DA3FF;color:#071120;font-family:" + MONO + ";font-size:10.5px;font-weight:600;padding:3px 9px;border-radius:99px;display:none;";
+            badge.textContent = "Promoted";
+            d.appendChild(badge);
           }
+          panel.appendChild(d);
+          nodeEls.push({ el: d, at: n.at, key: n.key });
         });
-        edgeEls.forEach(function (e) { e.el.style.opacity = step >= e.at ? "1" : "0"; });
-        document.getElementById("btn-play").innerHTML = playing ? "&#10074;&#10074; Pause" : "&#9654; Play";
-      }
 
-      function tick() { if (playing) { step = step >= 12 ? 0 : step + 1; render(); } }
-      timer = setInterval(tick, 1100);
+        var svg = document.getElementById("graph-edges");
+        var NS = "http://www.w3.org/2000/svg";
+        EDGES.forEach(function (e) {
+          var g = document.createElementNS(NS, "g");
+          g.style.opacity = "0"; g.style.transition = "opacity 0.5s ease";
+          var l = document.createElementNS(NS, "line");
+          l.setAttribute("x1", e.x1); l.setAttribute("y1", e.y1);
+          l.setAttribute("x2", e.x2); l.setAttribute("y2", e.y2);
+          l.setAttribute("stroke", "#4DA3FF"); l.setAttribute("stroke-width", "1.5");
+          l.setAttribute("stroke-dasharray", "5 4");
+          l.style.animation = "dashmarch 1s linear infinite";
+          var t = document.createElementNS(NS, "text");
+          t.setAttribute("x", e.lx); t.setAttribute("y", e.ly);
+          t.setAttribute("fill", "#6E93BE"); t.setAttribute("font-size", "11.5");
+          t.setAttribute("font-family", "JetBrains Mono, monospace"); t.setAttribute("text-anchor", "middle");
+          t.textContent = e.label;
+          g.appendChild(l); g.appendChild(t); svg.appendChild(g);
+          edgeEls.push({ el: g, at: e.at });
+        });
 
-      document.getElementById("btn-play").addEventListener("click", function () { playing = !playing; render(); });
-      document.getElementById("btn-step").addEventListener("click", function () { playing = false; step = step >= 12 ? 0 : step + 1; render(); });
-      document.getElementById("btn-reset").addEventListener("click", function () { playing = false; step = 0; render(); });
-      render();
-    })();
+        function render() {
+          logRows.forEach(function (r, i) {
+            var idx = i + 1, active = step === idx, done = step > idx;
+            r.row.style.background = active ? "rgba(77,163,255,0.1)" : "transparent";
+            r.row.style.borderColor = active ? "rgba(77,163,255,0.35)" : "transparent";
+            r.row.style.opacity = (done || active) ? "1" : "0.32";
+            if (r.tag) {
+              r.tag.textContent = (done || active) ? "folded \u2713" : "\u2192 graph";
+              r.tag.style.color = (done || active) ? "#4DA3FF" : "#575B60";
+            }
+          });
+          nodeEls.forEach(function (n) {
+            var on = step >= n.at;
+            n.el.style.opacity = on ? "1" : "0";
+            n.el.style.transform = on ? "translate(-50%,-50%)" : "translate(-50%,-42%)";
+            if (n.key === "patch") {
+              var promoted = step >= 10;
+              n.el.style.borderColor = promoted ? "#4DA3FF" : "rgba(255,255,255,0.16)";
+              badge.style.display = promoted ? "block" : "none";
+            }
+          });
+          edgeEls.forEach(function (e) { e.el.style.opacity = step >= e.at ? "1" : "0"; });
+          document.getElementById("btn-play").innerHTML = playing ? "&#10074;&#10074; Pause" : "&#9654; Play";
+        }
+
+        function tick() { if (playing) { step = step >= 12 ? 0 : step + 1; render(); } }
+        timer = setInterval(tick, 1100);
+
+        document.getElementById("btn-play").addEventListener("click", function () { playing = !playing; render(); });
+        document.getElementById("btn-step").addEventListener("click", function () { playing = false; step = step >= 12 ? 0 : step + 1; render(); });
+        document.getElementById("btn-reset").addEventListener("click", function () { playing = false; step = 0; render(); });
+        render();
+      })();
   </script>
 </body>
 
